@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% block head %}
+<title>{% block title %}Discord Repl Link{% endblock %}</title>
+<link rel="icon" type="image/png" href="/static/icon.png">
+<style>
+@font-face {
+	font-family: questrial;
+	src: url(/static/Questrial-Regular.ttf);
+}
+body {
+	margin: 0;
+  width: 100%;
+  height: 100vh;
+	font-family: questrial, sans-serif;
+}
+body {
+	background-color: #111c31;
+	color: #c0c0c0
+}
+h1 {
+  font-size: 3rem;
+}
+#center {
+	width: max-content;
+	display: table-cell;
+  vertical-align: middle;
+}
+#center-parent {
+	display: table;
+	height: 100%;
+	margin: 0 auto;
+}
+.avatar {
+  width: 2em;
+  height: 2em;
+	border-radius: 50%
+}
+.user {
+	display: table;
+}
+.user * {
+	display: table-cell;
+	vertical-align: middle;
+}
+.user .username {
+	padding-left: 0.5em;
+	color: inherit
+}
+a {
+	text-decoration: none;
+	color: #aaa
+}
+a:hover {
+	text-decoration: underline
+}
+.big {
+	font-size: 1.5em
+}
+.bigger {
+	font-size: 2em
+}
+
+.logo {
+	max-width: 1em;
+	display: inline-block;
+	position: relative;
+	top: .125em;
+	right: .25em
+}
+main {
+	width: 80vw;
+	margin: 0 auto
+}
+</style>
+<style>
+a[href*="//discord.gg"] {
+	left: -1.25em;
+	position: relative
+}
+a[href*="//discord.gg"]::before {
+	content: ' ';
+	background-image: url(/static/discord-logo-white.png);
+	background-size: contain;
+	width: 1.25em;
+	height: 1.25em;
+	position:  relative;
+	display: inline-block;
+	top: 0.25em;
+	margin-top: -.5em;
+}
+</style>
+<meta name="theme-color" content="#010101">
+<meta name="description" content="Link your Repl.it account to your Discord one">
+<meta name="theme-color" content="#010101">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Repl Discord Auth">
+<meta property="og:description" content="Link your Repl.it account to your Discord one">
+<meta property="og:site_name" content="Repl Discord Auth">
+<meta property="og:type" content="website" />
+
+{% endblock %}
+</head>
+<body>
+<main>
+	{% block body %}
+		
+	{% endblock %}
+</main>
+</html>

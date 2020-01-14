@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>API Docs</h1>
+<h3>/api/rich/discord/&lt;id&gt;</h3>
+<p>Returns rich information about the user from their Discord ID, including username, cycles, and repls. Omit /rich to only get their Repl.it username</p>
+<h3>/api/rich/replit/&lt;username&gt;</h3>
+<p>Returns rich information about the user from their Repl.it username, including Discord ID, cycles, and repls. Omit /rich to only get their Discord ID</p>
+{% endblock %}

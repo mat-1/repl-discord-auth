@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ replit_username }} + {{ discord_username }}{% endblock %}
+{% block body %}
+<div id="center-parent">
+	<div id="center" class="bigger">
+		<h1>
+			<img src="/static/icon.png" alt="Repl.it Discord Authentication Bot Logo" class="logo">
+			<span>Linked</span>
+		</h1>
+		<div class="user">
+			<img src="/avatar/replit/{{ replit_username }}" class="avatar">
+			<a class="username" href="https://repl.it/@{{ replit_username }}">{{ replit_username }}</a>
+		</div>
+    <br>
+		<div class="user">
+			<img src="/avatar/discord/{{ discord_uuid }}" class="avatar">
+			<span class="username">{{ discord_username }}</span>
+		</div>
+    
+	</div>
+</div>
+{% endblock %}

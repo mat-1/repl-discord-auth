@@ -1,0 +1,5 @@
+jinja2
+motor
+discord
+discord.py
+dnspython
