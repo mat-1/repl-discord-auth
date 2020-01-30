@@ -244,6 +244,7 @@ async def username(message, checking_user:Member='self'):
 		)
 		await message.channel.send(embed=embed)
 
+
 @betterbot.command(name='help')
 async def help(message, *args):
 	commands = {
